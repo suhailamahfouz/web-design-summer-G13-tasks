@@ -1,97 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Jan's Spring Term 2006 Afternoon Schedule</title>
-<style>
-  table {
-    width:  auto;
-    border-collapse: collapse;
-    font-family: sans-serif;
-    border: 2px solid black;
-  }
-  th, td {
-    border: 2px solid black;
-    padding: 8px;
-    text-align: center;
-  }
-  th {
-    background-color: rgb(249, 234, 234);
-  }
-  .office {
-    background-color: rgb(247, 164, 10); 
-  }
-  .mat108 {
-    background-color: rgb(25, 157, 13); 
-  }
-  .csc205 {
-    background-color: rgb(186, 25, 186); 
-  }
-  .dept-meeting, .ec-meeting {
-    background-color: gray; 
-  }
-  .office-hours {
-    background-color: rgb(242, 161, 9);
-  }
-</style>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
 </head>
 <body>
 
-<h1>Jan's Spring Term 2006 Afternoon Schedule</h1>
+<form>
+  <table style="border: black; background-color: rgb(29, 206, 241);">
 
-<table>
-  <thead>
+
     <tr>
-      <th></th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th> 
-      <th>Friday</th>
+      <th colspan="2" style="background-color: #ffff99; color: red; text-align: center;">Registration Form</th>
     </tr>
-  </thead>
-  <tbody>
+
+
+
     <tr>
-      <td>1:00</td>
-      <td class="office" rowspan="2">Office</td>
-      <td></td>
-      <td class="office" rowspan="2">Office</td>
-      <td class="office-hours" rowspan="8">Office Hours by Appt</td> 
-      <td class="office" rowspan="2">Office</td>
+      <td style="border: 1px solid black;">Enter Name</td>
+      <td style="border: 1px solid black;">
+        <input type="text" name="name" required minlength="3" maxlength="10"
+               style="width: 200px; padding: 5px;">
+      </td>
     </tr>
+
+
+
     <tr>
-      <td>1:30</td>
-      <td class="dept-meeting" rowspan="2">Dept Meeting</td>
+      <td style="border: 1px solid black;">Enter Password</td>
+      <td style="border: 1px solid black;">
+        <input type="password" name="password" required
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+               title="Must contain at least 1 uppercase, 1 lowercase letter, 1 number, and be at least 8 characters long"
+               style="width: 200px; padding: 5px;">
+      </td>
     </tr>
+
+
+
     <tr>
-      <td>2:00</td>
-      <td class="mat108" rowspan="3">MAT 108</td>
-      <td class="mat108" rowspan="3">MAT 108</td>
-      <td class="mat108" rowspan="3">MAT 108</td>
+      <td style="border: 1px solid black;">Enter Address</td>
+      <td style="border: 1px solid black;">
+        <textarea name="address" rows="3" required style="width: 200px; padding: 5px;"></textarea>
+      </td>
     </tr>
+
+
+
     <tr>
-      <td>2:30</td>
-      <td></td>
-      
+      <td style="border: 1px solid black;">Select Game</td>
+      <td style="border: 1px solid black;">
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+          <label><input type="checkbox" name="game" value="Hockey"> Hockey</label>
+          <label><input type="checkbox" name="game" value="Football"> Football</label>
+          <label><input type="checkbox" name="game" value="Badminton"> Badminton</label>
+          <label><input type="checkbox" name="game" value="Cricket"> Cricket</label>
+          <label><input type="checkbox" name="game" value="Volleyball"> Volleyball</label>
+        </div>
+      </td>
     </tr>
+
+
+
     <tr>
-      <td>3:00</td>
-      <td class="ec-meeting" rowspan="3">EC Meeting</td>
+      <td style="border: 1px solid black;">Gender</td>
+      <td style="border: 1px solid black;">
+        <label><input type="radio" name="gender" value="male" checked> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </td>
     </tr>
+
+
+
     <tr>
-      <td>3:30</td>
-      <td class="csc205" rowspan="3">CSC 205</td>
-      <td class="csc205" rowspan="3">CSC 205</td>
-      <td class="csc205" rowspan="3">CSC 205</td>
+      <td style="border: 1px solid black;">Select your age</td>
+      <td style="border: 1px solid black;">
+        <select name="age" required style="width: 150px; padding: 5px;">
+          <option value="">Select</option>
+          <option value="18-24">18-24</option>
+          <option value="25-34">25-34</option>
+          <option value="35-44">35-44</option>
+          <option value="45+">45+</option>
+        </select>
+      </td>
     </tr>
+
+
+
     <tr>
-      <td>4:00</td>
+      <td style="border: 1px solid black;">Select Photo</td>
+      <td style="border: 1px solid black;">
+        <input type="file" name="photo" accept=".png" required style="padding: 5px;">
+      </td>
     </tr>
+
+
+
     <tr>
-      <td>4:30</td>
-      <td></td>
+      <td colspan="2" style="text-align: center; border: 1px solid black;">
+        <input type="button" value="Click Me" style="width: 100px; padding: 10px; margin: 5px;">
+        <input type="reset" value="Reset" style="width: 100px; padding: 10px; margin: 5px;">
+        <input type="submit" value="Submit Form" style="width: 120px; padding: 10px; margin: 5px;">
+      </td>
     </tr>
-  </tbody>
-</table>
+
+    
+  </table>
+</form>
 
 </body>
 </html>
