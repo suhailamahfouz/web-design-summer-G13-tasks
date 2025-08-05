@@ -1,0 +1,257 @@
+@media screen and (max-width: 480px) {
+  /* General */
+  body {
+    font-size: 14px;
+  }
+
+  /* Section Headings */
+  .section-heading,
+  .contact-header {
+    margin-left: 20px;
+  }
+  .section-heading h2,
+  .contact-header h2 {
+    font-size: 24px;
+  }
+  .section-heading h2::after,
+  .contact-header h2::after {
+    width: 60%; 
+  }
+
+  /* ========== Hero Section ========== */
+  .hero {
+    height: 500px; 
+    padding: 5% 5%;
+  }
+  .navbar {
+    flex-direction: column; 
+    gap: 10px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hero-content {
+    top: 20%;
+    left: 20px;
+    right: 20px;
+    max-width: none; 
+  }
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  .hero-content p {
+    font-size: 14px;
+  }
+  .btn,
+  .btn.shop-now {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  /* ========== Shop Section ========== */
+  .shop-box {
+    padding: 5%;
+    margin: 10% 5%;
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tabs button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+  .product-info {
+    padding: 15px;
+  }
+  .product-info h3 {
+    font-size: 16px;
+  }
+  .price,
+  .description {
+    font-size: 14px;
+  }
+  .qty,
+  .qty-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .add-to-cart-btn {
+    padding: 8px;
+  }
+
+  /* ========== Services Section ========== */
+  .services-wrapper {
+    margin-top: -40px; 
+  }
+  .all-images-wrapper {
+    padding: 5px;
+    margin: 10% 5%;
+  }
+  .services-left {
+    flex-direction: column; 
+  }
+  .services-row {
+    flex-direction: column; 
+  }
+  .service-card {
+    height: 300px; 
+  }
+  .service-overlay h3 {
+    font-size: 20px;
+  }
+  .service-overlay p {
+    font-size: 14px;
+  }
+  .adoption-card {
+    margin-left: 0;
+  }
+
+  /* ========== About Us Section ========== */
+  .content {
+    flex-direction: column; 
+    margin: 10% 5%;
+    padding: 5%;
+    gap: 20px;
+  }
+  .text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .image-container {
+    display: none;
+    width: 100%;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+  }
+  .main-image,
+  .small-image {
+    width: 90%; 
+    margin: 0;
+    margin-top: 0;
+  }
+
+  /* ========== Team Section ========== */
+  .team-grid {
+    margin: 10% 5%;
+    padding: 5%;
+    gap: 20px;
+  }
+  .team-member {
+    max-width: 100%; 
+    flex: 1 1 100%;
+  }
+
+  /* ========== Blog Section ========== */
+  .blog-content {
+    flex-direction: column; 
+    margin: 0 20px;
+    gap: 15px;
+  }
+  .blog-text {
+    margin-right: 0;
+    padding: 2%;
+  }
+  .blog-text h3 {
+    font-size: 24px;
+  }
+  .blog-text p {
+    font-size: 18px;
+  }
+  .blog-text h4 {
+    font-size: 18px;
+  }
+  .blog-image {
+    margin-right: 0;
+    width: 100%;
+  }
+  .play-button {
+    width: 60px;
+    height: 60px;
+  }
+  .play-button i {
+    font-size: 24px;
+  }
+
+  /* ========== Contact Section ========== */
+  .contact-header {
+    margin-left: 20px;
+  }
+  .contact-header h2 {
+    font-size: 24px;
+  }
+  .contact-header h2::after {
+    width: 60%;
+  }
+  .contact-content {
+    flex-direction: column; 
+    margin: 0 20px;
+    gap: 20px;
+  }
+  .contact-form,
+  .contact-info {
+    width: 100%; 
+  }
+  .contact-form {
+    padding: 5%;
+  }
+  .form-group label,
+  .checkbox label {
+    font-size: 16px;
+  }
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+  .info-grid {
+    gap: 10px;
+  }
+  .info-item {
+    flex: 1 1 100%; 
+    padding: 4%;
+  }
+  .info-item h3 {
+    font-size: 18px;
+  }
+  .info-item p {
+    font-size: 14px;
+  }
+  .info-item a.btn {
+    padding: 8px 20px; 
+  }
+
+  /* ========== Footer ========== */
+  .footer-top {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .newsletter-section {
+    max-width: 100%;
+  }
+  .footer-links {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer-column {
+    flex: 1 1 45%; 
+  }
+  .footer-bottom {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .footer-bottom p {
+    font-size: 12px;
+  }
+  .social-icons a {
+    font-size: 18px;
+  }
+}
