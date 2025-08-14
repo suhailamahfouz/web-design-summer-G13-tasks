@@ -1,0 +1,142 @@
+:root{
+    --mainColor : blue;
+    --secondaryColor : maroon;
+    --bg-light: lightgray;
+    --font-large : 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+
+.card-animation{
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    animation-name: changeBgColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+    animation-delay: 3s;
+    animation-timing-function: linear ;
+}
+
+
+@keyframes changeBgColor {
+    /* from{
+        background-color: black;
+    }
+    to{
+        background-color: goldenrod;
+    } */
+     0%{
+        background-color: black;
+        transform: translate(0px , 0px);
+        border: 10px solid goldenrod;
+    }
+    25%{
+        background-color: lightblue;
+        transform: translateX(300px);
+        border-radius: 50%;
+     }
+     50%{
+        background-color: goldenrod;
+        transform: translate(300px , 300px) rotate(90deg);
+     }
+     75%{
+        background-color: maroon;
+          transform: translate(0px , 300px);
+     }
+     100%{
+        background-color: aqua;
+     }
+
+     
+}
+
+.bg-img{
+    background-image: url(../images/straight-road-travel-concept-illustration-png.webp);
+    background-size: 100% 115%;
+    overflow: hidden;
+}
+
+.bg-img img{
+    width: 200px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: carMoving 4s infinite linear;
+
+}
+
+@keyframes carMoving {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+
+
+
+.card{
+    width: 50%;
+    padding: 2%;
+    box-shadow: 0px 0px 4px lightgray;
+}
+
+.card p{
+    font-size: 25px;
+}
+.card p:hover{
+    color: red;
+}
+.card:hover{
+    background-color: lightgray;
+}
+
+/* nested css selector */
+.card{
+     width: 50%;
+    padding: 2%;
+    box-shadow: 0px 0px 4px lightgray;
+    & p{
+        font-size: var(--font-large);
+        &:hover{
+            color: var(--mainColor);
+        }
+    }
+    &:hover{
+        background-color: #CCCCCC;
+    }
+}
+
+[name]{
+    background-color: lightblue;
+}
+[type=password]{
+    background-color: var(--mainColor);
+}
+
+[href^=https]{
+    color: var(--secondaryColor);
+}
+[href$=html]{
+    color: green;
+    font-size: 25px;
+}
+
+[href*=w3schools]{
+    border: 2px solid ;
+    margin: 3%;
+}

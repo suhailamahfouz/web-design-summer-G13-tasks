@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.contact-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background-color: #ffffff;
+}
+
+.contact-header h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Contact info row */
+.contact-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-box .icon {
+    font-size: 24px;
+    color: rgb(79, 78, 78);
+    margin-bottom: 8px;
+}
+
+.contact-box h3 {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #222;
+}
+
+.contact-box a {
+    font-size: 14px;
+    color: #313131;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Form */
+.form-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #666666;
+}
+
+/* Map */
+.map-section {
+    max-width: 1500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.social-icons i {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+/* Stores */
+.stores-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.stores-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.store-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.store-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.store-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #222;
+}
+
+.store-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+.badge {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.badge:hover {
+  background-color: #000;
+  color: #fff;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.banner-section {
+  background-color: #f8f9fa; 
+}
+
+.banner-section img {
+  max-height: 200px; 
+  object-fit: cover; 
+}
+
+.banner-section .text-warning {
+  color: #ff7b25; 
+}
+
+.banner-section .btn-link {
+  color: #0d6efd; 
+}
+
+.footer-section {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-unstyled li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list-unstyled li a:hover {
+  color: #ffcc00;
+}
+
+.email-subscription-form input {
+  border-radius: 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
+
+.email-subscription-form button {
+  border-radius: 0;
+  padding: 10px 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffcc00; 
+}
+
+.bottom-section {
+  background-color: #2c2c2c;
+}
+
+.contact-us,
+.help-center,
+.give-feedback {
+  font-size: 14px;
+}
+
+.contact-us p,
+.help-center p,
+.give-feedback p {
+  margin-bottom: 5px;
+}
+
+.contact-us a,
+.help-center a,
+.give-feedback a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.payment-icons img {
+  height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-row {
+        flex-wrap: wrap;
+    }
+    .contact-box {
+        width: 48%;
+    }
+}
+@media (max-width: 768px) {
+    .store-card {
+        flex: 1 1 100%;
+    }
+    .contact-box {
+        width: 100%;
+    }
+}

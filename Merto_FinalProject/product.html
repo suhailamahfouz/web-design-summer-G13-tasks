@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product Details - Merto</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand me-5" href="index.html">
+            <img src="images/imgi_5_logo.png" alt="Merto Logo" width="100">
+        </a>
+
+        <!-- Contact Info -->
+        <div class="d-flex align-items-center me-5">
+            <i class="fas fa-phone me-2 text-muted"></i>
+            <span>Contact us 24/7</span>
+            <strong>(+92) 3942 7879</strong>
+        </div>
+
+        <!-- All Categories Dropdown -->
+        <div class="dropdown me-5">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="categoriesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                All Categories
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item" href="#">Autopart</a></li>
+                <li><a class="dropdown-item" href="#">Beauty & Health</a></li>
+                <li><a class="dropdown-item" href="#">Electronic</a></li>
+                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Game Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Home & Decor</a></li>
+                <li><a class="dropdown-item" href="#">Laptop & Computer</a></li>
+                <li><a class="dropdown-item" href="#">Phone & Tablet</a></li>
+                <li><a class="dropdown-item" href="#">TV, Audio - Video</a></li>
+            </ul>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="me-5">
+            <input type="text" class="form-control" placeholder="Search for products" aria-label="Search">
+        </form>
+
+        <!-- Language and Currency -->
+        <div class="dropdown me-3">
+            <button class="btn btn-link text-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/imgi_1_english.png" alt="English Flag" width="20"> English
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <img src="images/imgi_2_espanol.png" alt="Español Flag" width="20"> Español
+                <img src="images/imgi_3_francais.png" alt="Français Flag" width="20"> Français
+                <img src="images/imgi_4_portugues.png" alt="Português Flag" width="20"> Português
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-link text-dark dropdown-toggle" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                USD
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">BRL</a></li>
+            </ul>
+        </div>
+
+        <!-- Account, Wishlist and Cart -->
+<div class="d-flex align-items-center ms-auto">
+    <!-- Account -->
+    <a href="#" class="text-dark me-3 d-flex align-items-center">
+        <img src="images/account-icon-black.png" alt="Account" width="30" class="me-1">
+        <span style="color: #000;">Account</span>
+    </a>
+    
+    <!-- Wishlist -->
+    <a href="#" class="text-dark me-3 position-relative">
+        <img src="images/wishlist-icon-black.png" alt="Wishlist" width="30" class="me-1">
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill" style="color: #000;">0</span>
+    </a>
+    
+    <!-- Shopping Cart -->
+    <a href="#" class="text-dark position-relative">
+        <img src="images/cart-icon-black.gif" alt="Cart" width="24" class="me-1">
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill" style="color: #000;">0</span>
+    </a>
+</div>
+</header>
+<!-- Main Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <!-- Shop by Categories with Hamburger -->
+        <button class="btn btn-outline-secondary me-3 d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoriesOffcanvas">
+            <span class="navbar-toggler-icon me-2"></span> Shop by Categories
+            </button>
+            <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto">
+                        <!-- Homepages with Cards Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="homepagesDropdown" data-bs-toggle="dropdown">Homepages</a>
+                            <div class="dropdown-menu p-3" style="min-width:800px;">
+                                <div class="row g-3">
+
+                                    <!-- Card 1 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='supermarket01.html'" style="cursor:pointer;">
+                        <img src="images/supermarket01.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Supermarket 01</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 2 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='supermarket02.html'" style="cursor:pointer;">
+                        <img src="images/supermarket02.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Supermarket 02</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 3 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Furniture.html'" style="cursor:pointer;">
+                        <img src="images/Furniture.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Furniture</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 4 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Electronic.html'" style="cursor:pointer;">
+                        <img src="images/Electronic.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Electronic</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 5 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Autopart.html'" style="cursor:pointer;">
+                        <img src="images/Autopart.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Autopart</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 6 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Cosmetics.html'" style="cursor:pointer;">
+                        <img src="images/Cosmetics.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Cosmetics</h6></div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </li>
+<!-- --------------------------------- -->
+
+        <!-- Shop by Categories -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" data-bs-toggle="dropdown">
+    Categories
+  </a>
+  <ul class="dropdown-menu">
+    <li class="has-sub"><a class="dropdown-item" href="#">Fashion</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Phone & Tablet</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Laptop & Computer</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">TV.Audio - Video</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Camera & Photo</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Home & Decor</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Beauty & Health</a></li>
+    <li><a class="dropdown-item" href="#">Game Accessories</a></li> 
+    <li class="has-sub"><a class="dropdown-item" href="#">Autopart</a></li>
+  </ul>
+</li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Product 1</a></li>
+            <li><a class="dropdown-item" href="#">Product 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Page 1</a></li>
+            <li><a class="dropdown-item" href="#">Page 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown">About us</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Who we are</a></li>
+            <li><a class="dropdown-item" href="#">Our Team</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog Post 1</a></li>
+            <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="discountDropdown" data-bs-toggle="dropdown">Best Discount</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Discount 1</a></li>
+            <li><a class="dropdown-item" href="#">Discount 2</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Recently Viewed on the right -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="recentlyDropdown" data-bs-toggle="dropdown">Recently Viewed</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Product A</a></li>
+            <li><a class="dropdown-item" href="#">Product B</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+
+<!-- Breadcrumb -->
+<div class="container my-3">
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Shop</a></li>
+            <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-title">Product Name</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- Product Details -->
+<div class="container">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <!-- Main Image -->
+            <img id="main-image" src="images/placeholder.jpg" alt="Product Main Image" class="img-fluid mb-3">
+
+            <!-- Thumbnails -->
+            <div class="d-flex flex-wrap" id="thumbnails">
+                <!-- Thumbnails will be added dynamically -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Brand and Title -->
+            <p class="mb-0" id="brand">Brand Name</p>
+            <h1 id="product-title">Product Title</h1>
+            <div class="d-flex align-items-center mb-2">
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="fas fa-star text-warning"></span>
+                <span class="ms-2" id="rating-text">4.50 (4 Reviews)</span>
+                <a href="#" class="ms-3">Write a review</a>
+            </div>
+
+            <!-- Price and Stock -->
+            <h2 id="product-price">$0</h2>
+            <span class="badge bg-success">In stock</span>
+
+            <!-- Quantity and Buttons -->
+            <div class="d-flex align-items-center mt-3">
+                <button class="btn btn-outline-dark me-2" onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" class="form-control w-auto text-center" value="1" min="1" style="width: 50px;">
+                <button class="btn btn-outline-dark ms-2" onclick="increaseQuantity()">+</button>
+                <button class="btn btn-dark ms-3">+ ADD TO CART</button>
+                <button class="btn btn-danger ms-3">BUY NOW</button>
+            </div>
+
+            <!-- Wishlist and Compare -->
+            <div class="d-flex align-items-center mt-3">
+                <i class="far fa-heart me-1"></i> Add to wishlist
+                <span class="ms-5">Add to compare</span>
+            </div>
+
+            <!-- SKU and Categories -->
+            <p class="mt-3">SKU: <span id="sku">GWV6GFJCTH</span></p>
+            <p>Categories: <span id="categories">Accessories, Shoes</span></p>
+
+            <!-- Social Sharing -->
+            <div class="d-flex align-items-center mt-3">
+                <a href="#"><i class="fab fa-facebook-square me-2"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square me-2"></i></a>
+                <a href="#"><i class="fab fa-twitter-square me-2"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <p class="mb-0">Copyright © Merto. All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-3">
+          <img src="images/imgi_37_logo.png" alt="Merto Logo" class="mb-4">
+          <p><i class="fas fa-map-marker-alt"></i> 29 SE 2nd Ave, Miami, Florida 33131, United States</p>
+          <p><i class="fas fa-envelope"></i> info@example.com</p>
+          <p><i class="fas fa-phone"></i> +92 3942 7879</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-title">SHOPPING</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop by Brand</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Track order</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-title">INFORMATION</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Track Order</a></li>
+            <li><a href="shop.html">Shipping & Returns</a></li>
+            <li><a href="contact.html">About us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-title">ACCOUNT</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">My orders</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="footer-title">Let's keep in touch</h6>
+          <form class="email-subscription-form">
+            <input type="email" class="form-control mb-3" placeholder="Enter your email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="social-links d-flex justify-content-start">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section bg-dark text-white py-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="contact-us d-flex align-items-center">
+              <i class="fas fa-phone-volume me-2"></i>
+              <div>
+                <p class="mb-0">Didn't find what you were looking for?</p>
+                <a href="#" class="text-decoration-none">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="help-center d-flex align-items-center">
+              <i class="fas fa-smile-beam me-2"></i>
+              <div>
+                <p class="mb-0">How can we help you today?</p>
+                <a href="#" class="text-decoration-none">Help Center</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="give-feedback d-flex align-items-center">
+              <i class="fas fa-user-circle me-2"></i>
+              <div>
+                <p class="mb-0">We'd love to hear what you think!</p>
+                <a href="#" class="text-decoration-none">Give Feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright and Payment Methods -->
+      <div class="copyright-section bg-dark text-white py-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0">Copyright © Merto. All Rights Reserved</p>
+            </div>
+            <div class="col-md-6 text-end">
+  <div class="payment-icons">
+    <img src="images/imgi_160_payment-icons-1-300x31.png" alt="Payment Methods" class="img-fluid" style="max-height: 30px;">
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="js/product.js"></script>
+
+<!-- Bootstrap JS Bundle -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

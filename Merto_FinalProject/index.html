@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Merto – Elementor Multipurpose WooCommerce Theme</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- ================================================= -->
+<!-- Header -->
+<!-- ================================================= -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand me-5" href="index.html">
+            <img src="images/imgi_5_logo.png" alt="Merto Logo" width="100">
+        </a>
+
+        <!-- Contact Info -->
+        <div class="d-flex align-items-center me-5">
+            <i class="fas fa-phone me-2 text-muted"></i>
+            <span>Contact us 24/7</span>
+            <strong>(+92) 3942 7879</strong>
+        </div>
+
+        <!-- All Categories Dropdown -->
+        <div class="dropdown me-5">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="categoriesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                All Categories
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item" href="#">Autopart</a></li>
+                <li><a class="dropdown-item" href="#">Beauty & Health</a></li>
+                <li><a class="dropdown-item" href="#">Electronic</a></li>
+                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Game Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Home & Decor</a></li>
+                <li><a class="dropdown-item" href="#">Laptop & Computer</a></li>
+                <li><a class="dropdown-item" href="#">Phone & Tablet</a></li>
+                <li><a class="dropdown-item" href="#">TV, Audio - Video</a></li>
+            </ul>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="me-5">
+            <input type="text" class="form-control" placeholder="Search for products" aria-label="Search">
+        </form>
+
+        <!-- Language and Currency -->
+        <div class="dropdown me-3">
+            <button class="btn btn-link text-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/imgi_1_english.png" alt="English Flag" width="20"> English
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <img src="images/imgi_2_espanol.png" alt="Español Flag" width="20"> Español
+                <img src="images/imgi_3_francais.png" alt="Français Flag" width="20"> Français
+                <img src="images/imgi_4_portugues.png" alt="Português Flag" width="20"> Português
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-link text-dark dropdown-toggle" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                USD
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">BRL</a></li>
+            </ul>
+        </div>
+
+        <!-- Account, Wishlist and Cart -->
+<div class="d-flex align-items-center ms-auto">
+    <!-- Account -->
+    <a href="#" class="text-dark me-3 d-flex align-items-center">
+        <img src="images/account-icon-black.png" alt="Account" width="30" class="me-1">
+        <span style="color: #000;">Account</span>
+    </a>
+    
+    <!-- Wishlist -->
+    <a href="#" class="text-dark me-3 position-relative">
+        <img src="images/wishlist-icon-black.png" alt="Wishlist" width="30" class="me-1">
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill" style="color: #000;">0</span>
+    </a>
+    
+    <!-- Shopping Cart -->
+    <a href="#" class="text-dark position-relative">
+        <img src="images/cart-icon-black.gif" alt="Cart" width="24" class="me-1">
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill" style="color: #000;">0</span>
+    </a>
+</div>
+</header>
+<!-- Main Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <!-- Shop by Categories with Hamburger -->
+        <button class="btn btn-outline-secondary me-3 d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoriesOffcanvas">
+            <span class="navbar-toggler-icon me-2"></span> Shop by Categories
+            </button>
+            <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto">
+                        <!-- Homepages with Cards Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="homepagesDropdown" data-bs-toggle="dropdown">Homepages</a>
+                            <div class="dropdown-menu p-3" style="min-width:800px;">
+                                <div class="row g-3">
+
+                                    <!-- Card 1 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='supermarket01.html'" style="cursor:pointer;">
+                        <img src="images/supermarket01.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Supermarket 01</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 2 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='supermarket02.html'" style="cursor:pointer;">
+                        <img src="images/supermarket02.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Supermarket 02</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 3 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Furniture.html'" style="cursor:pointer;">
+                        <img src="images/Furniture.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Furniture</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 4 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Electronic.html'" style="cursor:pointer;">
+                        <img src="images/Electronic.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Electronic</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 5 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Autopart.html'" style="cursor:pointer;">
+                        <img src="images/Autopart.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Autopart</h6></div>
+                </div>
+            </div>
+
+                                    <!-- Card 6 -->
+                                <div class="col-md-4">
+                            <div class="card h-100" onclick="window.location.href='Cosmetics.html'" style="cursor:pointer;">
+                        <img src="images/Cosmetics.jpg" class="card-img-top">
+                    <div class="card-body text-center"><h6>Cosmetics</h6></div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </li>
+<!-- --------------------------------- -->
+
+        <!-- Shop by Categories -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" data-bs-toggle="dropdown">
+    Categories
+  </a>
+  <ul class="dropdown-menu">
+    <li class="has-sub"><a class="dropdown-item" href="#">Fashion</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Phone & Tablet</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Laptop & Computer</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">TV.Audio - Video</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Camera & Photo</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Home & Decor</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Beauty & Health</a></li>
+    <li><a class="dropdown-item" href="#">Game Accessories</a></li> 
+    <li class="has-sub"><a class="dropdown-item" href="#">Autopart</a></li>
+  </ul>
+</li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Product 1</a></li>
+            <li><a class="dropdown-item" href="#">Product 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Page 1</a></li>
+            <li><a class="dropdown-item" href="#">Page 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown">About us</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Who we are</a></li>
+            <li><a class="dropdown-item" href="#">Our Team</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog Post 1</a></li>
+            <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="discountDropdown" data-bs-toggle="dropdown">Best Discount</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Discount 1</a></li>
+            <li><a class="dropdown-item" href="#">Discount 2</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Recently Viewed on the right -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="recentlyDropdown" data-bs-toggle="dropdown">Recently Viewed</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Product A</a></li>
+            <li><a class="dropdown-item" href="#">Product B</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas Sidebar for Categories -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="categoriesOffcanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Shop by Categories</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled">
+     <li class="has-sub"><a class="dropdown-item" href="#">Fashion</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Phone & Tablet</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Laptop & Computer</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">TV.Audio - Video</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Camera & Photo</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Home & Decor</a></li>
+    <li class="has-sub"><a class="dropdown-item" href="#">Beauty & Health</a></li>
+    <li><a class="dropdown-item" href="#">Game Accessories</a></li> <!-- بدون سهم -->
+    <li class="has-sub"><a class="dropdown-item" href="#">Autopart</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Hero Section -->
+<div class="container my-4">
+  <div class="row g-3">
+    <!-- Slider -->
+    <div class="col-lg-8">
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center" style="background-color: #84a7a9 ; height: 615px;">
+                <div class="text-white slide-text-shift">
+                <p>Limited time offer *</p>
+                <h1 class="fw-bold">From Italia<br>Sale 25% off</h1>
+                <h2>Armchairs!</h2>
+                <button class="btn btn-dark mt-3">SHOP NOW</button>
+              </div>
+              <img src="images/imgi_78_slide1-demo1.jpg" alt="Chair" class="img-fluid ms-auto" style="max-height: 615px;">
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex align-items-center" style="background-color: #cca786; height: 615px;">
+              <div class="text-white slide-text-shift">
+                <p>Up To 40% off</p>
+                <h1 class="fw-bold">Body Lotion<br>Sale spf lap 50%</h1>
+                <h2>PA+++++</h2>
+                <button class="btn btn-dark mt-3">SHOP NOW</button>
+              </div>
+              <img src="images/imgi_65_slide2-demo1.jpg" alt="Sofa" class="img-fluid ms-auto" style="max-height: 615px;">
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="d-flex align-items-center" style="background-color: #db5847; height: 615px;">
+              <div class="text-white slide-text-shift">
+                <p>Limited time offer *</p>
+                <h1 class="fw-bold">Up To 20% <br>Instant Camera</h1>
+                <h2>Fujifilm's</h2>
+                <button class="btn btn-dark mt-3">SHOP NOW</button>
+              </div>
+              <img src="images/imgi_66_slide3-demo1.png" alt="Lamp" class="img-fluid ms-auto" style="max-height: 615px;">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+   <!-- Side banners -->
+<div class="col-lg-4 d-flex flex-column gap-3">
+  <!-- Banner 1 -->
+  <div class="bg-light position-relative" style="height: 300px; background-image: url('images/imgi_13_banner1-mobile-demo1\ \(1\).jpg'); background-size: cover; background-position: center;">
+    <div class="text-dark position-absolute" style="bottom: 20px; left: 20px;">
+      <p class="mb-1 fw-bold">BLACK FRIDAY</p>
+      <h4 class="fw-bold">Big Sale Eyeshadow</h4>
+      <p>Over +100 items</p>
+      <button class="btn btn-outline-dark btn-sm">SHOP NOW</button>
+    </div>
+  </div>
+  <!-- Banner 2 -->
+  <div class="bg-light position-relative" style="height: 300px; background-image: url('images/imgi_15_banner2-mobile-demo1.jpg'); background-size: cover; background-position: center;">
+    <div class="text-dark position-absolute" style="bottom: 20px; left: 20px;">
+      <p class="mb-1 fw-bold">NEW COLLECTION</p>
+      <h4 class="fw-bold">Puffer Jacket 30% off</h4>
+      <p>Best jacket in year</p>
+      <button class="btn btn-outline-dark btn-sm">SHOP NOW</button>
+    </div>
+    <div class="position-absolute top-0 end-0 bg-danger text-white fw-bold px-3 py-1 rounded-circle" style="margin: 10px;">$29</div>
+  </div>
+</div>
+<!-- Features Section -->
+<section class="features py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Fast, Free Shipping -->
+            <div class="col-md-3 text-center">
+                <i class="fas fa-truck-fast fa-2x mb-3"></i>
+                <h5>Fast, Free Shipping</h5>
+                <p class="text-muted">On order over $50</p>
+            </div>
+
+            <!-- Next Day Delivery -->
+            <div class="col-md-3 text-center">
+                <i class="far fa-clock fa-2x mb-3"></i>
+                <h5>Next Day Delivery</h5>
+                <p class="text-muted">Free – spend over $99</p>
+            </div>
+
+            <!-- Low Price Guarantee -->
+            <div class="col-md-3 text-center">
+                <i class="fas fa-percent fa-2x mb-3"></i>
+                <h5>Low Price Guarantee</h5>
+                <p class="text-muted">We offer competitive prices</p>
+            </div>
+
+            <!-- Quality Guarantee -->
+            <div class="col-md-3 text-center">
+                <i class="fas fa-thumbs-up fa-2x mb-3"></i>
+                <h5>Quality Guarantee</h5>
+                <p class="text-muted">We Guarantee Our Products</p>
+            </div>
+        </div>
+
+        <div class="bg-light py-4 overflow-hidden">
+  <div class="d-flex flex-nowrap gap-4 categories-scroll">
+    <div class="text-center">
+      <img src="images/fashion-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Fashion</a>
+    </div>
+    <div class="text-center">
+      <img src="images/headphones-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Headphones</a>
+    </div>
+    <div class="text-center">
+      <img src="images/handbags-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Handbags</a>
+    </div>
+    <div class="text-center">
+      <img src="images/smartphone-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Smartphone</a>
+    </div>
+    <div class="text-center">
+      <img src="images/home-decor-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Home & Decor</a>
+    </div>
+    <div class="text-center">
+      <img src="images/makeup-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Makeup</a>
+    </div>
+    <div class="text-center">
+      <img src="images/autopart-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Autopart</a>
+    </div>
+    <div class="text-center">
+      <img src="images/laptop-computer-icon.jpg" class="rounded-circle img-fluid mb-2" width="70">
+      <a href="#" class="text-decoration-none">Laptop & Computer</a>
+    </div>
+  </div>
+</div>
+
+<!-- Flash Deals Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold">Flash Deals</h2>
+      <div class="d-flex align-items-center">
+        <span class="me-3">Ends in <span id="deal-timer" class="fw-bold text-danger">20:12:23</span></span>
+        <a href="shop.html" class="text-decoration-none">See All Products</a>
+      </div>
+    </div>
+
+    <!-- Products Carousel - Centered -->
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="overflow-hidden">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            
+            <!-- Product 1 -->
+            <div style="width: 200px;">
+              <a href="product.html?product=laptop" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <span class="badge bg-danger position-absolute m-2">-35%</span>
+                  <img src="images/laptop.jpg" class="card-img-top" alt="Laptop" style="height: 150px; object-fit: cover;">
+                  <div class="card-body text-center p-2">
+                    <p class="small mb-1">Laptop Asus Vivobook I5 1355U</p>
+                    <p class="fw-bold mb-1">$999 <small class="text-muted text-decoration-line-through">$1536</small></p>
+                    <div class="text-warning">★★★★☆</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Product 2 -->
+            <div style="width: 200px;">
+              <a href="product.html?product=smart-watch" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <span class="badge bg-danger position-absolute m-2">-6%</span>
+                  <img src="images/smart-watch.jpg" class="card-img-top" alt="Smart Watch" style="height: 150px; object-fit: cover;">
+                  <div class="card-body text-center p-2">
+                    <p class="small mb-1">Apple Watch Series 9 GPS</p>
+                    <p class="fw-bold mb-1">$890 <small class="text-muted text-decoration-line-through">$990</small></p>
+                    <div class="text-warning">★★★★☆</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Product 3 -->
+            <div style="width: 200px;">
+              <a href="product.html?product=tools" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <span class="badge bg-danger position-absolute m-2">-8%</span>
+                  <img src="images/TOOLS-34.jpg" class="card-img-top" alt="Tools" style="height: 150px; object-fit: cover;">
+                  <div class="card-body text-center p-2">
+                    <p class="small mb-1">TOOLS 34 Hydraulic Trolley</p>
+                    <p class="fw-bold mb-1">$797 <small class="text-muted text-decoration-line-through">$837</small></p>
+                    <div class="text-warning">★★★★☆</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Product 4 -->
+            <div style="width: 200px;">
+              <a href="product.html?product=clock" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <span class="badge bg-danger position-absolute m-2">-10%</span>
+                  <img src="images/Home-Decor.jpg" class="card-img-top" alt="Clock" style="height: 150px; object-fit: cover;">
+                  <div class="card-body text-center p-2">
+                    <p class="small mb-1">Wall Clock Home Decor</p>
+                    <p class="fw-bold mb-1">$50 <small class="text-muted text-decoration-line-through">$75</small></p>
+                    <div class="text-warning">★★★★☆</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Product 5 -->
+            <div style="width: 200px;">
+              <a href="product.html?product=powder" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <span class="badge bg-danger position-absolute m-2">-36%</span>
+                  <img src="images/smart-watch.jpg" class="card-img-top" alt="Face Powder" style="height: 150px; object-fit: cover;">
+                  <div class="card-body text-center p-2">
+                    <p class="small mb-1">Translucent Face Powder</p>
+                    <p class="fw-bold mb-1">$9 <small class="text-muted text-decoration-line-through">$14</small></p>
+                    <div class="text-warning">★★★★☆</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- Banners Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+      
+      <!-- Car Banner -->
+      <div class="col-md-3">
+        <div class="position-relative rounded overflow-hidden h-100">
+          <img src="images/car-banner.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Car">
+          <div class="position-absolute bottom-0 start-0 p-3 text-white fw-bold" style="background: rgba(0,0,0,0.4);">
+            SALE 10% OFF <br> TIRES MICHELIN
+          </div>
+        </div>
+      </div>
+
+      <!-- Sofa Banner -->
+      <div class="col-md-6">
+        <div class="position-relative rounded overflow-hidden h-100">
+          <img src="images/sofa-banner.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Sofa">
+          <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <p class="text-warning fw-bold mb-1">NEW COLLECTION</p>
+            <h3 class="fw-bold">Sofa Crafted in UK</h3>
+            <a href="#" class="text-dark fw-semibold text-decoration-none">Shop now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beauty Banner -->
+      <div class="col-md-3">
+        <div class="position-relative rounded overflow-hidden h-100">
+          <img src="images/beauty-banner.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Beauty">
+          <div class="position-absolute bottom-0 start-0 p-3 text-dark fw-bold" style="background: rgba(255,255,255,0.6);">
+            Steals under $25 <br><span style="font-style: italic;">Beauty</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- Best Selling Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold">Best Selling</h2>
+      <a href="#" class="text-decoration-none">See All Products</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 shadow-sm h-100">
+          <span class="badge bg-danger position-absolute m-2">HOT</span>
+          <img src="images/shoes.jpg" class="card-img-top" alt="Nike Shoes">
+          <div class="card-body text-center">
+            <p class="small">Nike Air Max Unisex SYSTM Men Sneaker Shoes</p>
+            <p class="fw-bold">$148</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/skirt.jpg" class="card-img-top" alt="Denim Skirt">
+          <div class="card-body text-center">
+            <p class="small">LV Women Leather Accent Denim Mini Skirt</p>
+            <p class="fw-bold">$1,390</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 shadow-sm h-100">
+          <span class="badge bg-danger position-absolute m-2">-17%</span>
+          <img src="images/wheels.jpg" class="card-img-top" alt="Carbon Wheels">
+          <div class="card-body text-center">
+            <p class="small">High-Performance Carbon Fiber Wheels</p>
+            <p class="fw-bold">$499 <small class="text-muted text-decoration-line-through">$599</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 shadow-sm h-100">
+          <span class="badge bg-danger position-absolute m-2">-8%</span>
+          <img src="images/TOOLS-34.jpg" class="card-img-top" alt="Trolley">
+          <div class="card-body text-center">
+            <p class="small">TOOLS 34 Low Profile Hydraulic Trolley</p>
+            <p class="fw-bold">$767 <small class="text-muted text-decoration-line-through">$837</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/laptop.jpg" class="card-img-top" alt="MacBook">
+          <div class="card-body text-center">
+            <p class="small">Apple MacBook Air M1, 13.3 inch, 8GB RAM</p>
+            <p class="fw-bold">$572</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- From Our Blog Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-4">From Our Blog</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/blog1.jpg" class="card-img-top" alt="Fashion">
+          <div class="card-body">
+            <p class="text-uppercase small text-muted mb-1">Beauty & Fashion — By Myoui Mina</p>
+            <h5 class="card-title">Weekday Outfit Inspiration for All Occasions</h5>
+            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi et sodales.</p>
+            <a href="#" class="btn btn-dark btn-sm">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/blog2.jpg" class="card-img-top" alt="Cosmetics">
+          <div class="card-body">
+            <p class="text-uppercase small text-muted mb-1">Cosmetics — By Myoui Mina</p>
+            <h5 class="card-title">100% Pure & Natural Sage Essential Oil</h5>
+            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi et sodales.</p>
+            <a href="#" class="btn btn-dark btn-sm">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/blog3.jpg" class="card-img-top" alt="Electronics">
+          <div class="card-body">
+            <p class="text-uppercase small text-muted mb-1">Electronics — By Myoui Mina</p>
+            <h5 class="card-title">Tips for Cleaning Desktop & Laptop</h5>
+            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi et sodales.</p>
+            <a href="#" class="btn btn-dark btn-sm">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Search Section -->
+ <section class="w-100 mt-5  h-362 d-flex justify-content-center align-items-center" style="background-color: rgb(235,238,240); ">
+                <div class="w-50">
+                  <h3 class="p-3 text-center ">Looking for something else?</h3>
+                  <div class="input-group mb-3  position-relative">
+  <input type="text" class="form-control shadow-none border-0 p-3   outline2  " placeholder="Search for products....." aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="position-absolute top-0 end-0 bg-black text-white p-3 rounded-2"><i class="fa-solid fa-magnifying-glass    fw-border"></i></div>
+
+</div>
+<div class="row g-3 mt-3">
+ <div class="col-12">
+  <div class="row">
+      <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark">smart Phone</div>
+  <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark"> Tablet</div>
+  <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark">Controller</div>
+  <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark">Furniture</div>
+  <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark">Laptop </div>
+  <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark">Playstation</div>
+  </div>
+ </div>
+   <div class="col-12   ">
+     <div class="row  d-flex justify-content-center align-items-center">
+    <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark">womens fashion</div>
+  <div class="col-2  px-3 py-0 fw-bold ts border-end border-dark">Television</div>
+  <div class="col-2  px-3 py-0 fw-bold ts "> Make Up</diiv>
+   </div>
+</div>
+   </div>
+                </div>
+         </section>
+<!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-3">
+          <img src="images/imgi_37_logo.png" alt="Merto Logo" class="mb-4">
+          <p><i class="fas fa-map-marker-alt"></i> 29 SE 2nd Ave, Miami, Florida 33131, United States</p>
+          <p><i class="fas fa-envelope"></i> info@example.com</p>
+          <p><i class="fas fa-phone"></i> +92 3942 7879</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-title">SHOPPING</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop by Brand</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Track order</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-title">INFORMATION</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Track Order</a></li>
+            <li><a href="shop.html">Shipping & Returns</a></li>
+            <li><a href="contact.html">About us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-title">ACCOUNT</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">My orders</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="footer-title">Let's keep in touch</h6>
+          <form class="email-subscription-form">
+            <input type="email" class="form-control mb-3" placeholder="Enter your email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="social-links d-flex justify-content-start">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section bg-dark text-white py-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="contact-us d-flex align-items-center">
+              <i class="fas fa-phone-volume me-2"></i>
+              <div>
+                <p class="mb-0">Didn't find what you were looking for?</p>
+                <a href="#" class="text-decoration-none">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="help-center d-flex align-items-center">
+              <i class="fas fa-smile-beam me-2"></i>
+              <div>
+                <p class="mb-0">How can we help you today?</p>
+                <a href="#" class="text-decoration-none">Help Center</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="give-feedback d-flex align-items-center">
+              <i class="fas fa-user-circle me-2"></i>
+              <div>
+                <p class="mb-0">We'd love to hear what you think!</p>
+                <a href="#" class="text-decoration-none">Give Feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright and Payment Methods -->
+      <div class="copyright-section bg-dark text-white py-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0">Copyright © Merto. All Rights Reserved</p>
+            </div>
+            <div class="col-md-6 text-end">
+  <div class="payment-icons">
+    <img src="images/imgi_160_payment-icons-1-300x31.png" alt="Payment Methods" class="img-fluid" style="max-height: 30px;">
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+// Close all offcanvases when opening a new one
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all offcanvas elements
+    const offcanvases = document.querySelectorAll('.offcanvas');
+    
+    // Add event listeners to close all except the one being opened
+    offcanvases.forEach(offcanvas => {
+        offcanvas.addEventListener('show.bs.offcanvas', function(e) {
+            // Close all other offcanvases
+            offcanvases.forEach(otherOffcanvas => {
+                if (otherOffcanvas !== e.target) {
+                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(otherOffcanvas);
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide();
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
+</body>
+</html>
